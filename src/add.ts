@@ -1,2 +1,2 @@
-export const add: (a: number, b: number) => number = (a: number, b: number) =>
+export default (a: number, b: number): number =>
 	a + b;
