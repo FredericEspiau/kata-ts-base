@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "description": "Base for testing with Jest and TS",
   "scripts": {
+    "lint": "eslint .",
     "start": "ts-node src/main.ts",
     "test": "jest"
   },
