@@ -5,15 +5,12 @@ module.exports = {
       tsconfigRootDir: __dirname,
       project: ["./tsconfig.json"],
     },
-    plugins: ["@typescript-eslint", "jest", "unicorn", "import"],
+    plugins: ["@typescript-eslint", "jest", "unicorn"],
     extends: [
-      "airbnb-typescript/base",
+      "airbnb-typescript",
       "plugin:@typescript-eslint/recommended-requiring-type-checking",
       "plugin:jest/recommended",
       "plugin:unicorn/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "plugin:import/typescript",
       "prettier",
     ],
   };
