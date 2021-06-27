@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "lib": ["ESNext"],
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
 
     "declaration": true,
     "sourceMap": true,
@@ -11,6 +11,7 @@
     "outDir": "./dist",
     "incremental": true,
     "importHelpers": true,
+    "jsx": "react-jsx",
 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
