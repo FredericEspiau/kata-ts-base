@@ -21,5 +21,6 @@ module.exports = {
       "import/prefer-default-export": 0,
       "react/jsx-props-no-spreading": 0,
       "unicorn/no-null": 0,
+      "unicorn/prefer-module": 0
     },
   };
