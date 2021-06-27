@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,webstorm,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,webstorm,node
+
+# Created by https://www.toptal.com/developers/gitignore/api/webstorm+all,visualstudiocode,storybookjs,react,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=webstorm+all,visualstudiocode,storybookjs,react,node
 
 ### Node ###
 # Logs
@@ -9,6 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -45,8 +47,8 @@ build/Release
 node_modules/
 jspm_packages/
 
-# TypeScript v1 declaration files
-typings/
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
@@ -75,12 +77,15 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+.env.production
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+.parcel-cache
 
 # Next.js build output
 .next
+out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -110,6 +115,32 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+
+storybook-static/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -118,11 +149,15 @@ dist
 !.vscode/extensions.json
 *.code-workspace
 
+# Local History for Visual Studio Code
+.history/
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
-### WebStorm ###
+### WebStorm+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -132,6 +167,9 @@ dist
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
 
 # Generated files
 .idea/**/contentModel.xml
@@ -195,35 +233,20 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### WebStorm Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+### WebStorm+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
+.idea/
+
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
 
 # Sonarlint plugin
-# https://plugins.jetbrains.com/plugin/7973-sonarlint
-.idea/**/sonarlint/
+.idea/sonarlint
 
-# SonarQube Plugin
-# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-.idea/**/sonarIssues.xml
-
-# Markdown Navigator plugin
-# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator/
-
-# Cache file creation bug
-# See https://youtrack.jetbrains.com/issue/JBR-2257
-.idea/$CACHE_FILE$
-
-# CodeStream plugin
-# https://plugins.jetbrains.com/plugin/12206-codestream
-.idea/codestream.xml
-.idea
-
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,webstorm,node
+# End of https://www.toptal.com/developers/gitignore/api/webstorm+all,visualstudiocode,storybookjs,react,node
