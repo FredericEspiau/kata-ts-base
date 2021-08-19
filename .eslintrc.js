@@ -8,6 +8,8 @@ module.exports = {
     plugins: ["@typescript-eslint", "jest", "unicorn", "jsx-a11y"],
     extends: [
       "airbnb-typescript",
+      "airbnb/hooks",
+      "plugin:@typescript-eslint/recommended",
       "plugin:@typescript-eslint/recommended-requiring-type-checking",
       "plugin:jest/recommended",
       "plugin:unicorn/recommended",
@@ -21,6 +23,8 @@ module.exports = {
       "import/prefer-default-export": 0,
       "react/jsx-props-no-spreading": 0,
       "unicorn/no-null": 0,
-      "unicorn/prefer-module": 0
+      "unicorn/prefer-module": 0,
+      "import/extensions": 0,
+      "import/no-unresolved": 0,
     },
   };
