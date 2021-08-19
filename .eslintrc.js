@@ -26,5 +26,9 @@ module.exports = {
       "unicorn/prefer-module": 0,
       "import/extensions": 0,
       "import/no-unresolved": 0,
+      "import/order": [
+        "error",
+        { alphabetize: { order: "asc", caseInsensitive: true } },
+      ],
     },
   };
