@@ -12,18 +12,13 @@ module.exports = {
       "plugin:@typescript-eslint/recommended",
       "plugin:@typescript-eslint/recommended-requiring-type-checking",
       "plugin:jest/recommended",
-      "plugin:unicorn/recommended",
       "plugin:jsx-a11y/recommended",
       "prettier",
     ],
     rules: {
-      "unicorn/prevent-abbreviations": 0,
       "react/react-in-jsx-scope": 0,
-      "unicorn/filename-case": 0,
       "import/prefer-default-export": 0,
       "react/jsx-props-no-spreading": 0,
-      "unicorn/no-null": 0,
-      "unicorn/prefer-module": 0,
       "import/extensions": 0,
       "import/no-unresolved": 0,
       "import/order": [
