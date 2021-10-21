@@ -1,7 +1,7 @@
 {
-  "name": "jest-base",
+  "name": "kata-ts-base",
   "version": "4.0.0",
-  "description": "Base for testing with Jest and TS",
+  "description": "Base for Kata with Jest and TS",
   "scripts": {
     "lint": "eslint .",
     "pretty": "prettier --write ./src",
@@ -10,37 +10,37 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FredericEspiau/jest-base.git"
+    "url": "git+https://github.com/FredericEspiau/kata-ts-base.git"
   },
   "author": "Frédéric Espiau <frederic.espiau@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FredericEspiau/jest-base/issues"
+    "url": "https://github.com/FredericEspiau/kata-ts-base/issues"
   },
   "engines": {
     "node": ">=16.0.0"
   },
-  "homepage": "https://github.com/FredericEspiau/jest-base#readme",
+  "homepage": "https://github.com/FredericEspiau/kata-ts-base#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.3",
+    "@types/node": "^16.11.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.5.2",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-node": "^11.1.0",
-    "jest": "^27.2.5",
+    "jest": "^27.3.1",
     "prettier": "2.4.1",
-    "ts-jest": "^27.0.5",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   },
   "volta": {
-    "node": "16.11.0",
-    "npm": "8.0.0"
+    "node": "16.12.0",
+    "npm": "8.1.0"
   }
 }
