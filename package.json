@@ -27,7 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
     "eslint": "^8.2.0",
-    "eslint-config-hardcore": "^23.0.0",
+    "eslint-config-hardcore": "^23.1.0",
     "eslint-formatter-pretty": "^4.1.0",
     "jest": "^27.3.1",
     "prettier": "2.4.1",

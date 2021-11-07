@@ -32,6 +32,8 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/naming-convention": "off",
+    eqeqeq: ["error", "smart"],
     "id-length": "off",
     "import/order": [
       "error",
@@ -57,6 +59,7 @@ module.exports = {
       "error",
       { onlyFunctionsWithAsyncKeyword: true },
     ],
+    "no-eq-null": "off",
     "no-use-before-define": "off",
     "no-void": "off",
     "node/no-extraneous-import": "off",
@@ -64,5 +67,6 @@ module.exports = {
       "error",
       { ignores: ["modules"] },
     ],
+    "unicorn/no-null": "off",
   },
 };
