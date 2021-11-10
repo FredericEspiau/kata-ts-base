@@ -23,18 +23,18 @@ module.exports = {
     node: true,
   },
   settings: {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     node: {
       resolvePaths: ["node_modules/@types"],
       tryExtensions: [".cjs", ".d.ts", ".mjs", ".node", ".js", ".json", ".ts"],
     },
   },
   rules: {
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
     "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-redeclare": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
     eqeqeq: ["error", "smart"],
-    "id-length": "off",
     "import/order": [
       "error",
       {
@@ -51,8 +51,6 @@ module.exports = {
         "newlines-between": "always",
       },
     ],
-    "import/no-default-export": "error",
-    // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     "import/prefer-default-export": "off",
     "jest/consistent-test-it": "off",
     "jest/prefer-expect-assertions": [
@@ -60,9 +58,7 @@ module.exports = {
       { onlyFunctionsWithAsyncKeyword: true },
     ],
     "no-eq-null": "off",
-    "no-use-before-define": "off",
     "no-void": "off",
-    "node/no-extraneous-import": "off",
     "node/no-unsupported-features/es-syntax": [
       "error",
       { ignores: ["modules"] },
