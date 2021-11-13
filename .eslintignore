@@ -251,3 +251,4 @@ modules.xml
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+all,visualstudiocode,storybookjs,react,node
 
 .eslintrc.js
+jest.config.js
