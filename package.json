@@ -24,23 +24,23 @@
   "homepage": "https://github.com/FredericEspiau/kata-ts-base#readme",
   "devDependencies": {
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.10",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^8.3.0",
-    "eslint-config-hardcore": "^23.3.1",
+    "@types/node": "^16.11.14",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.4.1",
+    "eslint-config-hardcore": "^23.6.0",
     "eslint-formatter-pretty": "^4.1.0",
-    "jest": "^27.3.1",
+    "jest": "^27.4.5",
     "jest-ts-auto-mock": "^2.0.0",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "ts-auto-mock": "^3.5.0",
-    "ts-jest": "^27.0.7",
+    "ts-jest": "^27.1.1",
     "ts-node": "^10.4.0",
     "ts-patch": "^2.0.1",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.4"
   },
   "volta": {
-    "node": "16.13.0",
-    "npm": "8.1.4"
+    "node": "16.13.1",
+    "npm": "8.3.0"
   }
 }
