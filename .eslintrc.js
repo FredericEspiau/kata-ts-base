@@ -7,12 +7,9 @@ module.exports = {
   },
   plugins: ["@typescript-eslint"],
   extends: [
-    "hardcore",
-    "hardcore/node",
-    "hardcore/react",
-    "hardcore/jest",
-    "hardcore/ts",
-    "hardcore/fp",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   env: {
