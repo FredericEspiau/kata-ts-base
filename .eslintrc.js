@@ -5,11 +5,14 @@ module.exports = {
     project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "jest", "node"],
   extends: [
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:node/recommended-module",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   env: {
@@ -20,6 +23,14 @@ module.exports = {
     node: true,
   },
   settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     node: {
       resolvePaths: ["node_modules/@types"],
