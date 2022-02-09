@@ -19,18 +19,15 @@
 
     "forceConsistentCasingInFileNames": true,
 
-    "strict": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
     "plugins": [
       {
         "transform": "ts-auto-mock/transformer",
         "cacheBetweenTests": false
       }
-    ]
+    ],
+
+    "strict": true,
+    "exactOptionalPropertyTypes": true
   },
   "exclude": ["node_modules", "dist"]
 }

@@ -14,6 +14,7 @@ module.exports = {
     "plugin:jest/style",
     "plugin:node/recommended-module",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
   ],
   env: {
     commonjs: true,
