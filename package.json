@@ -24,7 +24,7 @@
   "homepage": "https://github.com/FredericEspiau/kata-ts-base#readme",
   "devDependencies": {
     "@types/jest": "27.4.0",
-    "@types/node": "16.11.22",
+    "@types/node": "16.11.24",
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
     "eslint": "8.8.0",
@@ -49,7 +49,7 @@
     "typescript": "4.5.5"
   },
   "volta": {
-    "node": "16.13.2",
-    "npm": "8.4.1"
+    "node": "16.14.0",
+    "npm": "8.5.0"
   }
 }
